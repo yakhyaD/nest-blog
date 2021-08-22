@@ -5,7 +5,7 @@ dotenv.config();
 
 export const DatabaseConfig: MysqlConnectionOptions = {
     //type: process.env.DB_TYPE,
-    type: 'mysql',
+    type: "mysql",
     host: process.env.DB_HOST,
     //port: process.env.DB_PORT,
     port: 3306,
