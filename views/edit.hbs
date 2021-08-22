@@ -1,0 +1,28 @@
+<div class="container mt-2">
+    <h3 class="text-center my-2">Edit Post</h3>
+    <form action="/posts/{{post.id}}/edit?_method=PUT"
+        method="POST"
+        class="d-flex flex-column justify-center align-center w-50 mt-2 mx-auto"
+    >
+        <div class="">
+            <div class="form-group">
+                <label for="title">
+                    <h5>Title</h5>
+                </label>
+                <input value={{post.title}} class="form-control" type="text" id="title" name="title">
+            </div>
+        </div>
+        <div class="">
+            <div class="form-group">
+                <h5>Tell Us Your Story:</h5>
+                <textarea  rows="5" cols="33" class="form-control" id="body" name="body">
+                    {{post.body}}
+                </textarea>
+            </div>
+        </div>
+        <div class="d-flex">
+            <input class="btn btn-success mr-5" type="submit" value="Save">
+            <a href="/posts" class="btn btn-secondary">Cancel</a>
+        </div>
+    </form>
+</div>

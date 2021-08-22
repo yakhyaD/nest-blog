@@ -1,0 +1,18 @@
+<div class="row mt-5">
+    <div class="col s12 m8">
+        <h3>{{post.title}}
+            {{!-- <small>{{{editIcon .user user story._id false}}}</small> --}}
+        </h3>
+        <div class="container my-4">
+            {{{post.body}}}
+        </div>
+        {{#if post.show }}
+            <div class="d-flex mt-4">
+                <a href="/posts/{{post.id}}/edit" class="btn btn-success mr-2">Edit</a>
+                <form action="/posts/{{post.id}}" method="DELETE" onsubmit="event.preventDefault()">
+                    <input type="submit" class="btn btn-danger" value="Delete" />
+                </form>
+            </div>
+        {{/if}}
+    </div>
+</div>

@@ -1,0 +1,26 @@
+<div class="container mt-2">
+    <h2 class="text-center my-2">Login</h2>
+    <form action="/auth/login" method="POST" class="d-flex flex-column justify-center align-center w-50 mt-2 mx-auto">
+        <div class="">
+            <div class="form-group">
+                <label for="title">
+                    <h5>Email:</h5>
+                </label>
+                <input  class="form-control" type="email" id="title" name="username">
+            </div>
+        </div>
+        <div class="">
+            <div class="form-group">
+                <label for="title">
+                    <h5>Password:</h5>
+                </label>
+                <input type="password" name="password"  class="form-control"></input>
+            </div>
+        </div>
+        <div class="d-flex">
+            <input class="btn btn-primary  my-2 mx-auto" type="submit" value="Login" class="btn">
+        </div>
+        <a href="/signup" class="text-primary mt-2">Don't have a account ? Register here</a>
+        <a href="/posts" class="text-secondary mt-2">Browse as a guest </a>
+    </form>
+</div>
